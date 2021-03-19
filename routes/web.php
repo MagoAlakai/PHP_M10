@@ -91,9 +91,7 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('show/{id}')->group(function () {
         Route::get('/', function ($id) {
-            return view('catalog/show', [
-                'id'=> $id
-            ]);
+            return view('catalog/show', compact('id'));
         });
         Route::post('/', function ($id) {
             return "post from catalog create del libro $id";
@@ -108,9 +106,7 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('edit/{id}')->group(function () {
         Route::get('/', function ($id) {
-            return view('catalog/edit', [
-                'id'=> $id
-            ]);
+            return view('catalog/edit', compact('id'));
         });
         Route::post('/', function ($id) {
             return "post from catalog edit del libro $id";
