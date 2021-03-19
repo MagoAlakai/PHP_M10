@@ -74,6 +74,7 @@
   </nav>
 </header>
 
+@yield('content')
 
 
 </html>
