@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Sticky Footer Navbar Template · Bootstrap v5.0</title>
+    <title>@yield('title')</title>
 
 
     <!-- Bootstrap core CSS -->
@@ -74,7 +74,11 @@
   </nav>
 </header>
 
-@yield('content')
+<main role="main" class="container">
+
+    @yield('content')
+
+</main>
 
 
 </html>
