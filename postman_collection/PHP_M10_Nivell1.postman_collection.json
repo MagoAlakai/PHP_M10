@@ -1,0 +1,702 @@
+{
+	"info": {
+		"_postman_id": "847e90c7-18cf-49d2-915e-7e801c311dc0",
+		"name": "PHP_M10_Nivell1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000"
+						},
+						"description": "Get pantalla principal"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000"
+						},
+						"description": "Post pantalla principal"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000"
+						},
+						"description": "Put pantalla principal"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000"
+						},
+						"description": "Delete pantalla principal"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						},
+						"description": "Get login"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						},
+						"description": "Post login"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						},
+						"description": "Update login"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"login"
+							]
+						},
+						"description": "Delete login"
+					},
+					"response": []
+				}
+			],
+			"description": "Login Routes"
+		},
+		{
+			"name": "logout",
+			"item": [
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"logout"
+							]
+						},
+						"description": "Get logout"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"logout"
+							]
+						},
+						"description": "Post logout"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"logout"
+							]
+						},
+						"description": "Update from logout"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:8000/login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/catalog",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"catalog"
+							]
+						},
+						"description": "Delete logout"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "catalog",
+			"item": [
+				{
+					"name": "/",
+					"item": [
+						{
+							"name": "http://127.0.0.1:8000/catalog",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog"
+									]
+								},
+								"description": "Get catalog"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog"
+									]
+								},
+								"description": "Post catalog"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog"
+									]
+								},
+								"description": "Put catalog"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog"
+									]
+								},
+								"description": "Delete catalog"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/show/{id}",
+					"item": [
+						{
+							"name": "http://127.0.0.1:8000/catalog/show/{id}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/show/5",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"show",
+										"5"
+									]
+								},
+								"description": "Get catalog/show/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/show/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/show/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"show",
+										"{id}"
+									]
+								},
+								"description": "Post catalog/show/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/show/{id}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/show/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"show",
+										"{id}"
+									]
+								},
+								"description": "Put catalog/show/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/show/{id}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/show/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"show",
+										"{id}"
+									]
+								},
+								"description": "Delete catalog/show/{id}"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/create",
+					"item": [
+						{
+							"name": "http://127.0.0.1:8000/catalog/create",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"create"
+									]
+								},
+								"description": "Get catalog/create"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"create"
+									]
+								},
+								"description": "Post catalog/create"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/create",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"create"
+									]
+								},
+								"description": "Put catalog/create"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/create",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/create",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"create"
+									]
+								},
+								"description": "Delete catalog/create"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "/edit/{id}",
+					"item": [
+						{
+							"name": "http://127.0.0.1:8000/catalog/edit/{id}",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/edit/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"edit",
+										"{id}"
+									]
+								},
+								"description": "Get catalog/edit/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/edit/{id}",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/edit/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"edit",
+										"{id}"
+									]
+								},
+								"description": "Post catalog/edit/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/edit/{id}",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/edit/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"edit",
+										"{id}"
+									]
+								},
+								"description": "Put catalog/edit/{id}"
+							},
+							"response": []
+						},
+						{
+							"name": "http://127.0.0.1:8000/catalog/edit/{id}",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalog/edit/{id}",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalog",
+										"edit",
+										"{id}"
+									]
+								},
+								"description": "Delete catalog/edit/{id}"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

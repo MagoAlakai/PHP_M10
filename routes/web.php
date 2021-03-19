@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/', function () {
-        return 'Pantalla principal';
+        return view('home');
     });
     Route::post('/', function () {
         return 'post from Pantalla principal';
@@ -30,7 +30,7 @@ Route::prefix('/')->group(function () {
 
 Route::prefix('login')->group(function () {
     Route::get('/', function () {
-        return 'Login usuario';
+        return view('auth/login');
     });
     Route::post('/', function () {
         return 'post from login';
@@ -61,7 +61,7 @@ Route::prefix('logout')->group(function () {
 Route::prefix('catalog')->group(function () {
     Route::prefix('/')->group(function () {
         Route::get('/', function () {
-            return 'Listado de libros';
+            return view('catalog/index');
         });
         Route::post('/', function () {
             return 'post from catalog';
@@ -76,7 +76,7 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('create')->group(function () {
         Route::get('/', function () {
-            return 'Añadir libro';
+            return view('catalog/create');
         });
         Route::post('/', function () {
             return 'post from catalog create';
@@ -91,7 +91,9 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('show/{id}')->group(function () {
         Route::get('/', function ($id) {
-            return "Vista detalle del libro $id";
+            return view('catalog/show', [
+                'id'=> $id
+            ]);
         });
         Route::post('/', function ($id) {
             return "post from catalog create del libro $id";
@@ -106,7 +108,9 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('edit/{id}')->group(function () {
         Route::get('/', function ($id) {
-            return "Modificar el libro $id";
+            return view('catalog/edit', [
+                'id'=> $id
+            ]);
         });
         Route::post('/', function ($id) {
             return "post from catalog edit del libro $id";
