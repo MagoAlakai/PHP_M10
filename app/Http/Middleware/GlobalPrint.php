@@ -16,6 +16,7 @@ class GlobalPrint
      */
     public function handle(Request $request, Closure $next)
     {
+        echo date("m.d.y");
         return $next($request);
     }
 }

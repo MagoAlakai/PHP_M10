@@ -1,6 +1,12 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\CatalogController;
+use App\Http\Controllers\EditController;
+use App\Http\Controllers\CreateController;
+use App\Http\Controllers\ShowController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::prefix('/')->group(function () {
-    Route::get('/', function () {
-        return view('home');
-    });
+    Route::get('/', [HomeController::class, 'index']);
     Route::post('/', function () {
         return 'post from Pantalla principal';
     });
@@ -29,9 +33,7 @@ Route::prefix('/')->group(function () {
 });
 
 Route::prefix('login')->group(function () {
-    Route::get('/', function () {
-        return view('auth/login');
-    });
+    Route::get('/', [LoginController::class, 'index']);
     Route::post('/', function () {
         return 'post from login';
     });
@@ -60,9 +62,7 @@ Route::prefix('logout')->group(function () {
 
 Route::prefix('catalog')->group(function () {
     Route::prefix('/')->group(function () {
-        Route::get('/', function () {
-            return view('catalog/index');
-        });
+        Route::get('/', [CatalogController::class, 'index']);
         Route::post('/', function () {
             return 'post from catalog';
         });
@@ -75,9 +75,7 @@ Route::prefix('catalog')->group(function () {
     });
 
     Route::prefix('create')->group(function () {
-        Route::get('/', function () {
-            return view('catalog/create');
-        });
+        Route::get('/', [CreateController::class, 'index']);
         Route::post('/', function () {
             return 'post from catalog create';
         });
@@ -90,9 +88,7 @@ Route::prefix('catalog')->group(function () {
     });
 
     Route::prefix('show/{id}')->group(function () {
-        Route::get('/', function ($id) {
-            return view('catalog/show', compact('id'));
-        });
+        Route::get('/', [ShowController::class, 'index']);
         Route::post('/', function ($id) {
             return "post from catalog create del libro $id";
         });
@@ -105,9 +101,7 @@ Route::prefix('catalog')->group(function () {
     });
 
     Route::prefix('edit/{id}')->group(function () {
-        Route::get('/', function ($id) {
-            return view('catalog/edit', compact('id'));
-        });
+        Route::get('/', [EditController::class, 'index']);
         Route::post('/', function ($id) {
             return "post from catalog edit del libro $id";
         });
