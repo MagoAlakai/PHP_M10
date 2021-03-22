@@ -7,8 +7,7 @@ use Illuminate\Http\Request;
 class EditController extends Controller
 {
     public function index($id){
-        $date = date("m.d.y");
-        return view('catalog/edit', compact('id', 'date'));
+        return view('catalog/edit', compact('id'));
     }
 
     public function edit(Request $request) {

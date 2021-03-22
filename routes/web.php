@@ -22,12 +22,12 @@ use App\Http\Controllers\ShowController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->middleware('globalPrint');
 
 Route::get('login', [LoginController::class, 'index'])->middleware('globalPrint');
 
 
-Route::prefix('catalog')->group(function () {
+Route::middleware('globalPrint')->prefix('catalog')->group(function () {
     Route::get('/', [CatalogController::class, 'index']);
 
     Route::prefix('create')->group(function () {

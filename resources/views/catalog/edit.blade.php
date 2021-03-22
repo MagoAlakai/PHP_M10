@@ -3,7 +3,7 @@
 
 @section('content')
 
-<h3 class="container text-center mt-5 mb-4">Modificar el libro {{$id}}</h3>
+<h3 class="container text-center mb-4">Modificar el libro {{$id}}</h3>
 
 <form action="redirect()->route('catalog')" method="POST" class="row col-8 mx-auto">
     @csrf

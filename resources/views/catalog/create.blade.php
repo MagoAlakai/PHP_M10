@@ -3,7 +3,7 @@
 
 @section('content')
 
-<h3 class="container text-center mt-5 mb-4">Añadir libro</h3>
+<h3 class="container text-center mb-4">Añadir libro</h3>
 
 <form method="POST" class="row col-8 mx-auto">
     @csrf
