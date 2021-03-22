@@ -19,7 +19,7 @@ class GlobalPrint
         $date = $date = date("m/d/Y");
         echo "
         <div class='container mt-5'>
-            <h5 class='mt-5 text-center'>Fecha que viene del controlador global: $date</h5>
+            <h5 class='mt-5 text-center'>Fecha que viene del middleware global: $date</h5>
         </div>";
         return $next($request);
     }
