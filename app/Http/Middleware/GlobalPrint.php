@@ -17,10 +17,10 @@ class GlobalPrint
     public function handle(Request $request, Closure $next)
 
     {
-        $date = $date = date("m.d.y");
+        $date = $date = date("m/d/Y");
         echo "
         <div class='container mt-5'>
-            <h4 class='mt-5'>Fecha que viene del controlador: $date</h4>
+            <h5 class='mt-5 text-center'>Fecha que viene del middleware en el controlador: $date</h5>
         </div>";
         return $next($request);
 
