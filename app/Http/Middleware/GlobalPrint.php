@@ -15,8 +15,14 @@ class GlobalPrint
      * @return mixed
      */
     public function handle(Request $request, Closure $next)
+
     {
-        echo date("m.d.y");
+        $date = $date = date("m.d.y");
+        echo "
+        <div class='container mt-5'>
+            <h4 class='mt-5'>Fecha que viene del controlador: $date</h4>
+        </div>";
         return $next($request);
+
     }
 }
