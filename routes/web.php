@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\CatalogController;
@@ -76,9 +78,7 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('create')->group(function () {
         Route::get('/', [CreateController::class, 'index']);
-        Route::post('/', function () {
-            return 'post from catalog create';
-        });
+        Route::post('/', [CreateController::class, 'create']);
         Route::put('/', function () {
             return 'put from catalog create';
         });
@@ -102,9 +102,7 @@ Route::prefix('catalog')->group(function () {
 
     Route::prefix('edit/{id}')->group(function () {
         Route::get('/', [EditController::class, 'index']);
-        Route::post('/', function ($id) {
-            return "post from catalog edit del libro $id";
-        });
+        Route::post('/', [EditController::class, 'edit']);
         Route::put('/', function ($id) {
             return "put from catalog edit del libro $id";
         });
@@ -112,7 +110,5 @@ Route::prefix('catalog')->group(function () {
             return "delete from catalog edit del libro $id";
         });
     });
-
 });
-
 
