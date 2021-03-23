@@ -11,7 +11,7 @@ class RegisterController extends Controller
     }
 
     public function store(Request $request){
-        //$alert = false;
+
         $request->validate([
             'name' => 'required',
             'passport' => 'required',
@@ -20,20 +20,17 @@ class RegisterController extends Controller
             'confirmPassword' => 'required',
           ]);
 
+        $name = $request->input('name');
 
-        // if($request->validate()){
-        //     echo "
-        //     <div class='alert alert-success'>
-        //         <p class='text-center'>Your registration has been successful!</p>
-        //     </div>
-        //     ";
-        // }else{
-        //     return response('', 404)
-        //             -> redirect('error404');
-        // }
-
-
-       // $alert = true;
+        if($name !== null){
+            echo "
+            <div class='container mt-4 w-50 alert alert-success'>
+                <p class='text-center'>Your registration has been successful!</p>
+            </div>
+            ";
+        }else{
+            return redirect('error404');
+        }
         return view('auth/register');
 
 

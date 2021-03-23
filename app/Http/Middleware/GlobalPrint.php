@@ -17,17 +17,11 @@ class GlobalPrint
     public function handle(Request $request, Closure $next)
 
     {
-        if($request){
-            $date = $date = date("m/d/Y");
-            echo "
-            <div class='container mt-5'>
-                <h5 class='mt-5 text-center'>Fecha que viene del middleware en el controlador: $date</h5>
-            </div>";
-            return $next($request);
-        }else{
-            return response('', 404)
-                   -> redirect('error404');
-        }
-
+        $date = $date = date("m/d/Y");
+        echo "
+        <div class='container mt-5'>
+            <h5 class='mt-5 text-center'>Fecha que viene del middleware en el controlador: $date</h5>
+        </div>";
+        return $next($request);
     }
 }

@@ -22,7 +22,6 @@ class CreateController extends Controller
               'year.required' => 'The year field is mandatory!'
           ]);
 
-        $newBook = [];
         $name = $request->input('name');
         $author = $request->input('author');
         $year = $request->input('year');
@@ -31,15 +30,7 @@ class CreateController extends Controller
             'author' => $author,
             'year' => $year];
 
-
-
-        if(empty($newBook)){
-            return response('', 404)
-                       -> redirect('error404');
-        }else{
-            return view('catalog/created')->with($newBook);
-        }
-
+        return view('catalog/created')->with($newBook);
 
     }
 }

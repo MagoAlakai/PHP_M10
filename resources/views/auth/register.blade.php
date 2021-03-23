@@ -48,12 +48,4 @@
     <button type="submit" class="btn btn-primary col-8 mx-auto">Submit</button>
   </form>
 
-  @if($errors->all() === [])
-
-    <div class='container mt-4 w-50 alert alert-success'>
-        <p class='text-center'>Your registration has been successful!</p>
-    </div>
-
-  @endif
-
 @endsection
