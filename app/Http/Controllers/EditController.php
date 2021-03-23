@@ -14,7 +14,7 @@ class EditController extends Controller
         $request->validate([
           'name' => 'required',
           'author' => 'required',
-          'year' => 'required|integer|max:4'
+          'year' => 'required|integer'
         ],[
             'name.required' => 'El campo name es obligatorio!',
             'year.integer' => 'Please insert only numbers!',

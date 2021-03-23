@@ -43,3 +43,7 @@ Route::middleware('globalPrint')->prefix('catalog')->group(function () {
     });
 });
 
+Route::get('error404', function(){
+    return view('error404');
+});
+

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class CreateController extends Controller
 {
+
     public function index(){
         return view('catalog/create');
     }
@@ -14,11 +15,31 @@ class CreateController extends Controller
         $request->validate([
             'name' => 'required',
             'author' => 'required',
-            'year' => 'required|integer|max:4'
+            'year' => 'required|integer'
           ],[
               'name.required' => 'El campo name es obligatorio!',
               'year.integer' => 'Please insert only numbers!',
               'year.required' => 'The year field is mandatory!'
           ]);
+
+        $newBook = [];
+        $name = $request->input('name');
+        $author = $request->input('author');
+        $year = $request->input('year');
+        $newBook = [
+            'name' => $name,
+            'author' => $author,
+            'year' => $year];
+
+
+
+        if(empty($newBook)){
+            return response('', 404)
+                       -> redirect('error404');
+        }else{
+            return view('catalog/created')->with($newBook);
+        }
+
+
     }
 }
