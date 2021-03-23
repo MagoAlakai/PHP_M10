@@ -30,6 +30,13 @@
             @enderror
         </div>
     </div>
+    <div class="mb-3 col-8 mx-auto">
+        <label class="form-label">Captcha Error</label>
+        <input type="text" id="captcha" name="captcha" placeholder="input vacío para lanzar error" class="form-control @error('captcha') is-invalid @enderror">
+        @error('captcha')
+            <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
+    </div>
     <button type="submit" class="btn btn-primary col-8 mx-auto">Submit</button>
   </form>
 

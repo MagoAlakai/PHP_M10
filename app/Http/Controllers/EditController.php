@@ -20,5 +20,13 @@ class EditController extends Controller
             'year.integer' => 'Please insert only numbers!',
             'year.required' => 'The year field is mandatory!'
         ]);
+
+        //Validación para lanzar error con input vacío sin validación
+        $captcha = $request->input('captcha');
+        if($captcha == null){
+             return redirect('error404');
+        }else{
+            return 'Libro editado correctamente';
+        }
     }
 }

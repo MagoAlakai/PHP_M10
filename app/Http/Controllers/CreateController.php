@@ -22,7 +22,7 @@ class CreateController extends Controller
               'year.required' => 'The year field is mandatory!'
           ]);
 
-        $newBook = [];
+        //Asocia variables a los datos de inputs, y creo un array
         $name = $request->input('name');
         $author = $request->input('author');
         $year = $request->input('year');
@@ -31,15 +31,15 @@ class CreateController extends Controller
             'author' => $author,
             'year' => $year];
 
-
-
-        if(empty($newBook)){
-            return response('', 404)
-                       -> redirect('error404');
+        //Validación para lanzar error con input vacío sin validación
+        $captcha = $request->input('captcha');
+        if($captcha == null){
+             return redirect('error404');
         }else{
-            return view('catalog/created')->with($newBook);
-        }
 
+        //Una vista nueva para mostrar libro creado
+        return view('catalog/created')->with($newBook);
+        }
 
     }
 }

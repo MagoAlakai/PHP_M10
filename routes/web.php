@@ -21,12 +21,13 @@ use App\Http\Controllers\ShowController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ //Route Home
 Route::get('/', [HomeController::class, 'index'])->middleware('globalPrint');
 
+//Route login
 Route::get('login', [LoginController::class, 'index'])->middleware('globalPrint');
 
-
+//Routes para catalog
 Route::middleware('globalPrint')->prefix('catalog')->group(function () {
     Route::get('/', [CatalogController::class, 'index']);
 
@@ -43,6 +44,7 @@ Route::middleware('globalPrint')->prefix('catalog')->group(function () {
     });
 });
 
+//Route error 404
 Route::get('error404', function(){
     return view('error404');
 });
