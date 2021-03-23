@@ -4,13 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class LoginController extends Controller
+class PasswordController extends Controller
 {
     public function index(){
-        return view('auth/login');
+        return view('auth/password');
     }
 
-    public function check(){
+    public function store(){
 
     }
 }
