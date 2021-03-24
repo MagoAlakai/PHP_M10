@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
@@ -13,6 +14,7 @@
     <!-- Bootstrap core CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Favicons -->
 <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
 <link rel="icon" href="/docs/5.0/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -49,7 +51,11 @@
   <!-- Fixed navbar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
+        @if(Cookie::get('login'))
+            <a class="navbar-brand" href="#">{{ Cookie::get('login') }}</a>
+        @else
+             <a class="navbar-brand" href="#">Fixed navbar</a>
+        @endif
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -76,10 +82,10 @@
 
 <main role="main" class="container">
 
-
     @yield('content')
 
 </main>
 
+</body>
 
 </html>

@@ -4,7 +4,7 @@
 
 <h3 class="container text-center">Login usuario</h3>
 
-<form method="POST" class="row col-8 mx-auto">
+<form method="POST" class="row col-8 mx-auto form">
     @csrf
     <div class="mb-3 col-8 mx-auto">
         <label class="form-label">Full Name</label>
